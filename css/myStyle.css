@@ -90,3 +90,10 @@ body{
     cursor:pointer;
 
 }
+
+.mainbody .progrees-bar{
+    display:flex;
+    margin: 40px 0;
+    justify-content:center;
+    align-items:center;
+}
