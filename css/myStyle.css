@@ -51,8 +51,7 @@ body{
 .form-outer form .page .field{
     display:flex;
     padding: 10px;
-    /* font-size: 1.15rem;
-    text-align:left; */
+
 }
 .field .label{
     padding: 10px;
@@ -112,15 +111,7 @@ body{
     border-radius:50%;
     display:inline-block;    
 }
-/* .progrees-bar .steps .bullet:before,
-.progrees-bar .steps .bullet:after{
-    position:absolute;
-    content:'';
-    top:5px;
-    height:3px;
-    width:40px;
-    background: #ffaa12;    
-} */
+
 .progrees-bar .steps span{
     position:absolute;
     line-height:25px;
@@ -132,4 +123,16 @@ body{
     transform:translate(-50%,-50%);
     color: #1212ff;
     font-size:18px;
+}
+
+.prev-1{
+    margin:4px;
+    padding:8px;
+}
+.prev-2{
+    margin:4px;
+}
+.field .sumbmit{
+    width:120px;
+    margin-left:8px;
 }
