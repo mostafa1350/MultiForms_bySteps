@@ -45,18 +45,44 @@ thirdNextBtn.addEventListener("click",()=>{
 
     current +=1;
 });
+submitBtn.addEventListener("click",()=>{
+    changeBullet[current-1].classList.add("active");
+    changeCheckForm[current-1].classList.add("active");
+    changeNameForm[current-1].classList.add("active");
+    current +=1;
+
+    setTimeout(()=>{
+        alert('sign up was Finish successfully ...')
+        location.reload();
+    },700);
+});
 // for Prev buttons
 
 firstPrevBtn.addEventListener("click",()=>{
-    slidePage.style.marginLeft= '0%';    
+    slidePage.style.marginLeft= '0%';
+    changeBullet[current-2].classList.remove("active");
+    changeCheckForm[current-2].classList.remove("active");
+    changeNameForm[current-2].classList.remove("active");
+
+    current -=1;
 });
 
 secondPrevBtn.addEventListener("click",()=>{
-    slidePage.style.marginLeft= '-25%';    
+    slidePage.style.marginLeft= '-25%';
+    changeBullet[current-2].classList.remove("active");
+    changeCheckForm[current-2].classList.remove("active");
+    changeNameForm[current-2].classList.remove("active");
+
+    current -=1;    
 });
 
 thirdPrevBtn.addEventListener("click",()=>{
-    slidePage.style.marginLeft= '-50%';    
+    slidePage.style.marginLeft= '-50%';
+    changeBullet[current-2].classList.remove("active");
+    changeCheckForm[current-2].classList.remove("active");
+    changeNameForm[current-2].classList.remove("active");
+
+    current -=1;    
 });
 
 
